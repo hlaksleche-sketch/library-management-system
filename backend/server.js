@@ -81,4 +81,4 @@ app.use((error, _req, res, _next) => {
 
 await db.query('SELECT 1 FROM books LIMIT 1');
 const port = Number(process.env.PORT || 3001);
-app.listen(port, '127.0.0.1', () => console.log('Library API on http://127.0.0.1:' + port));
+app.listen(port, '0.0.0.0', () => console.log('Library API on http://127.0.0.1:' + port));
